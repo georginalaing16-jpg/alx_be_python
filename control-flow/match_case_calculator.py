@@ -2,9 +2,9 @@
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 # Prompt User to enter an operator
-operation = input("Choose the operator (+, -, *, /): ")
+operations = input("Choose the operation (+, -, *, /): ")
 # Perform calculation based on the operator using match-case
-match operation:
+match operations:
     case "+":
         result = num1 + num2
         print(f"The result of {num1} + {num2} is {result}.")
@@ -21,4 +21,4 @@ match operation:
         else:
             print("Cannot divide by zero.")
     case _:
-        print("Invalid operator. Please choose one of +, -, *, or /.")
+        print("Invalid operation. Please choose one of +, -, *, or /.")
