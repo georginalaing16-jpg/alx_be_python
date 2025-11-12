@@ -1,22 +1,10 @@
-# Prompt User to enter first and second numbers
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-# Prompt User to enter an operator
-operation = input("Choose the operation (+, -, *, /): ")
-# Perform calculation based on the operator using match-case
-match operation:
-    case "+":
-        result = num1 + num2
-        print(f"The result is {result}.")
-    case "-":
-        result = num1 - num2
-        print(f"The result is {result}.")
-    case "*":
-        result = num1 * num2
-        print(f"The result is {result}.")
-    case "/":
-        if num2 != 0:
-            result = num1 / num2
-            print(f"The result is {result}.")
-        else:
-            print("Cannot divide by zero.")
+# Prompt Use for Weather Information
+weather = input("What's the weather like today? (sunny/rainy/cold): ")
+if weather == "sunny":
+    print("Wear a t-shirt and sunglasses.")
+elif weather == "rainy":
+    print("Don't forget your umbrella and a raincoat.")
+elif weather == "cold":
+    print("Make sure to wear a warm coat and a scarf.")
+else:
+    print("Sorry, I don't have recommendations for this weather.")
