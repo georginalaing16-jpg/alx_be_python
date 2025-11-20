@@ -13,7 +13,7 @@ def convert_to_fahrenheit(celsius):
 
 try:
     # Prompt user for temperature
-    temp_input = input("Enter the temperature value: ")
+    temp_input = input("Enter the temperature to convert:")
 
     # Check if numeric
     if not temp_input.replace('.', '', 1).isdigit():
@@ -22,7 +22,7 @@ try:
     temperature = float(temp_input)
 
     # Prompt user for scale
-    scale = input("Is this temperature in Celsius (C) or Fahrenheit (F)? ").strip().upper()
+    scale = input("Is this temperature in Celsius or Fahrenheit? (C/F):").strip().upper()
 
     if scale == "C":
         result = convert_to_fahrenheit(temperature)
@@ -33,7 +33,7 @@ try:
         print(f"{temperature}°F is equal to {result}°C")
 
     else:
-        print("Invalid scale. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+        print("Invalid scale. Please enter a numeric value.")
 
 except ValueError as e:
     print(e)
